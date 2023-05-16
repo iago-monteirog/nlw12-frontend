@@ -1,9 +1,24 @@
 export default function Home() {
   return (
-    <>
-      <div className="h-screen bg-zinc-900 p-6 text-zinc-50">
-        <h1 className="text-4xl font-bold">Sua cápsula do tempo!</h1>
+    <main className="grid min-h-screen grid-cols-2">
+      {/* left */}
+      <div>
+        <div className="relative flex flex-col items-start justify-between px-28 py-16">
+          <div className="blur-full absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-700 opacity-50" />{' '}
+        </div>
       </div>
-    </>
+
+      {/* right */}
+      <div className="flex flex-col p-16">
+        <div className="flex flex-1 items-center justify-center">
+          <p className="w-[360px] text-center leading-relaxed">
+            Você ainda não registrou nenhuma lembrança, comece a{' '}
+            <a href="" className="underline hover:text-gray-50">
+              criar agora!
+            </a>
+          </p>
+        </div>
+      </div>
+    </main>
   )
 }
